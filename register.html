@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Skills Enhancement Registration</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        form input, form select, form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form input[type="radio"], form input[type="checkbox"] {
+            width: auto;
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        form button {
+            background-color: #3498db;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #85c1e9;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .header-link{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .header-link a{
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .header-link a:hover{
+            background-color: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cybersecurity Skills Enhancement Registration</h1>
+        <form action="#" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="level">Current Skill Level:</label>
+            <select id="level" name="level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label>Areas of Interest:</label>
+            <input type="checkbox" id="networkSecurity" name="interests[]" value="networkSecurity">
+            <label for="networkSecurity">Network Security</label>
+            <input type="checkbox" id="ethicalHacking" name="interests[]" value="ethicalHacking">
+            <label for="ethicalHacking">Ethical Hacking</label>
+            <input type="checkbox" id="malwareAnalysis" name="interests[]" value="malwareAnalysis">
+            <label for="malwareAnalysis">Malware Analysis</label><br>
+
+            <label>Preferred Learning Method:</label>
+            <input type="radio" id="online" name="learningMethod" value="online">
+            <label for="online">Online</label>
+            <input type="radio" id="inPerson" name="learningMethod" value="inPerson">
+            <label for="inPerson">In-Person</label>
+
+            <label for="experience">Prior Experience (if any):</label>
+            <textarea id="experience" name="experience"></textarea>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="url">Portfolio URL (optional):</label>
+            <input type="url" id="url" name="url">
+
+            <label for="color">Favorite Hex Colour:</label>
+            <input type="color" id="color" name="color">
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Want to go back home? click <a href="index.html">here</a></p>
+    </footer>
+    <div class="header-link">
+        <a href="index.html">Home</a>
+    </div>
+</body>
+</html>
